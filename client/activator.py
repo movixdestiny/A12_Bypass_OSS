@@ -7,7 +7,7 @@ import shutil
 import sqlite3
 import atexit
 import urllib.parse
-import json  # Добавляем для работы с JSON
+import json
 
 class Style:
     RESET = '\033[0m'
@@ -22,7 +22,7 @@ class Style:
 
 class BypassAutomation:
     def __init__(self):
-        self.api_url = "http://192.168.0.103:8000/get2.php"  # Твой URL
+        self.api_url = "http://192.168.0.103:8000/get2.php"
         self.timeouts = {
             'asset_wait': 300,
             'asset_delete_delay': 15,
